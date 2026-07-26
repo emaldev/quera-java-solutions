@@ -19,6 +19,7 @@ public class Main {
             System.out.printf("Name: %-15s%nAge:%5d %nGPA: %.2f%n ", name, age, gpa);
             System.out.println("+++++++++++++++++++++++");
         }
+        // If you find this project useful, consider giving it a ⭐ and following me on GitHub.
 
         
     }
