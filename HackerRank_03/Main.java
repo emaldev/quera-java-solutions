@@ -7,14 +7,17 @@ public class Main {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
-        for(int i = 0; i < 3; i++){
-            System.out.println("Ente 3 name  ane price : " + (i + 1));
+        for(int i = 0; i < 1; i++){
+            System.out.println("Enter the student's name, age, and grade: " + (i + 1));
 
             String name = input.nextLine();
-            int prince = input.nextInt();
-            input.nextLine();
+            int age = input.nextInt();
+            double gpa = input.nextDouble();
+            
 
-            System.out.printf("%-15s%05d%n", name, prince);
+            System.out.println("+++++++++++++++++++++++");
+            System.out.printf("Name: %-15s%nAge:%5d %nGPA: %.2f%n ", name, age, gpa);
+            System.out.println("+++++++++++++++++++++++");
         }
 
         
