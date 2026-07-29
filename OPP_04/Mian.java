@@ -8,8 +8,8 @@ public class Mian {
         student.displayInfo();
         student1.displayInfo();
 
-        student.isPassed();
-        student1.isPassed();
+          System.out.println(student.isPassed());
+          System.out.println(student1.isPassed());
     }
     
 }

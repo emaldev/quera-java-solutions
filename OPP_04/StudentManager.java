@@ -20,14 +20,7 @@ public class StudentManager {
         );
     }
 
-    public void isPassed(){
-        boolean Gfinal = false;
-        if(grade >= 60){
-          Gfinal = true;
-          System.out.println("Good!");
-        }
-        if(!Gfinal){
-            System.out.println("Not Bad");
-        }
-    }
+   public boolean isPassed(){
+      return grade >= 60;
+   }
 }
