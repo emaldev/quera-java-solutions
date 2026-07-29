@@ -2,7 +2,7 @@ public class AnimalManagement {
     private String name;
     private int age;
 
-    public AnimalManagement(Strin name, int age){
+    public AnimalManagement(String name, int age){
         this.name = name;
         this.age = age;
 
