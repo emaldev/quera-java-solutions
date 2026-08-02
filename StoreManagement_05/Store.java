@@ -18,15 +18,16 @@ public class Store {
 
     }
 
-  public boolean findProduct(String name){
-   for(Product p : products){
-    if(p.getName().equalsIgnoreCase(name)){
-        System.out.println(p.getName());
-        return true;
+ 
+    public Product findProduct(String name){
+        for(Product p : products){
+            if(p.getName().equalsIgnoreCase(name)){
+                System.out.println(p.getName());
+                 return p;
+            }
+
+        }
+        return null;
     }
-   
-   }
-    return false;
-  }
 
 }
