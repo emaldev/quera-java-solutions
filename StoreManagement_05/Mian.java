@@ -23,7 +23,7 @@ public class Mian {
 
             switch (choise) {
                 case 1 :
-                    System.out.println("Ente name , price and quantity the adding produts: ");
+                    System.out.println("Ente name , price{float} and quantity{integer} the adding produts: ");
                     String name = input.nextLine();
                     double price = input.nextDouble();
                     int quantity = input.nextInt();
@@ -32,6 +32,19 @@ public class Mian {
 
                 case 2:
                     store.showProducts();
+                    break;
+
+                case 3: 
+                    System.out.print("Please Enter your product name :");
+                    name = input.nextLine();
+                    store.findProduct(name);
+                    break;
+
+                case 4: 
+                    System.out.println("Please enter name and quantity for sell: ");
+                    name = input.nextLine();
+                    quantity = input.nextInt();
+                    store.sellProduct(name, quantity);
                     break;
 
                     
