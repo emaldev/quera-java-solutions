@@ -11,10 +11,17 @@ public class Book {
 
     }
 
+    public String getTitle(){
+        return title;
+    }
+    public String getAuthor(){
+        return author;
+    }
+
  
 
     public void displayInfor(){
-        System.out.println("Title: " + title + ", Author: " + author + ", Available : " + available)
+        System.out.println("Title: " + title + ", Author: " + author + ", Available : " + available);
     }
 
     public boolean borrow(){
