@@ -3,7 +3,7 @@ package MiniLibrary_06;
 public class Book {
     private String title;
     private String author;
-    boolean available;
+    boolean available = true;
 
     public Book(String title, String author){
         this.title = title;

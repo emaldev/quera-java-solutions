@@ -16,7 +16,6 @@ public class Library {
         for(Book b : book){
         if(b.getTitle().equalsIgnoreCase(title)){
            System.out.println(b.getTitle());
-           b.borrow();
            return b;
         }
         
