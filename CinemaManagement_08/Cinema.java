@@ -10,14 +10,33 @@ public class Cinema {
        film.add(new Film(name, directory, country, production_year));
     }
 
+    // this is the select file method.
     public Film selectFilm(String name){
         for(Film f : film){
-            if(f.getName().equalsIgnoreCase(name));{
+            if(f.getName().equalsIgnoreCase(name)){
             System.out.println("This is your Preferred file: " + f.getName());
             return f;
             }
         }
         return null;
+    }
+
+    // this is the search method .
+    public Film searchFilm(String name){
+        for(Film f : film){ 
+            if(f.getName().equalsIgnoreCase(name)){
+            System.out.println("This is your Preferred file: " + f.getName());
+            return f;
+            }
+        }
+        return null;
+
+    }
+
+    public void showFilm(){
+        for(Film f : film){
+            f.displayInfo();
+        }
     }
 
 
