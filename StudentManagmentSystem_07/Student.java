@@ -23,7 +23,7 @@ public class Student{
         return id;
     }
 
-    public void displayAllStudent(){
+    public void displayStudent(){
         System.out.println("Name: " + name + ", Age: " + age + ", Id: " + id);
     }
     

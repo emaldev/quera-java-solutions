@@ -24,5 +24,12 @@ public class School{
         
     }
 
+    public void showStudent(){
+        for(Student s : students){
+            s.displayStudent();
+        }
+
+    }
+
 
 }
