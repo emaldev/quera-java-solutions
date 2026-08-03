@@ -20,7 +20,7 @@ public class Film {
     public String getName(){
         return name;
     }
-    public String getDirectory(){
+    public String getDirector(){
         return director;
     }
     public String getCountry(){
