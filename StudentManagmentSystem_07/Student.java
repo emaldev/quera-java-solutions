@@ -22,5 +22,9 @@ public class Student {
     public int getId(){
         return id;
     }
+
+    public void displayAllStudent(){
+        System.out.println("Name: " + name + ", Age: " + age + ", Id: " + id);
+    }
     
 }
