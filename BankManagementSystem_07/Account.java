@@ -12,6 +12,16 @@ public class Account {
         this.balance = invertory;
     }
 
+    public String getName(){
+        return name;
+    }
+    public String getAccountNumber(){
+        return acountNumber;
+    }
+    public float getBalance(){
+        return balance;
+    }
+
 
     // display acount 
     public void displayInfo(){
