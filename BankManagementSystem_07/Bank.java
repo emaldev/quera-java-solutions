@@ -2,7 +2,7 @@ package BankManagementSystem_07;
 
 import java.util.ArrayList;
 
-public class Back {
+public class Bank {
     
     ArrayList<Account> bank = new ArrayList<>();
 
@@ -14,6 +14,23 @@ public class Back {
     public void display(){
         for(Account A : bank){
             A.displayInfo();
+        }
+    }
+    // this is diposit method 
+    public void depositMoney(String name , float amount){
+        Account account = searchAccount(name);
+
+        if(account != null){
+            account.deposit(amount);
+        }
+    }
+
+    // this is the withdras money method
+    public void withdrawMoney(String name , float amount){
+        Account account = searchAccount(name);
+
+        if(account != null){
+            account.withdrawal(amount);
         }
     }
 
