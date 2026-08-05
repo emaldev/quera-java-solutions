@@ -11,6 +11,12 @@ public class Back {
         bank.add(new Account(name, accountNumber, balance));
     }
 
+    public void display(){
+        for(Account A : bank){
+            A.displayInfo();
+        }
+    }
+
 
     // this is search method for bank.
 
